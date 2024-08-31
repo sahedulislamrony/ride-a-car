@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.topBar {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topBar .contact,
+.topBar .socialLinks {
+  width: 50%;
+}
+
+.topBar .contact a {
+  color: var(--color-white);
+}
+
+.topBar .contact a:last-child {
+  margin-left: 5rem;
+}
+
+.topBar .contact a i {
+  font-size: 2.5rem;
+}
+
+.topBar .contact a span {
+  display: inline-block;
+  transform: translate(5px, -0.5rem);
+}
+
+.topBar .socialLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+
+  text-transform: capitalize;
+}
+
+.topBar .socialLinks a {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  font-size: 1.3rem;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.7rem;
+  display: grid;
+  place-items: center;
+}
+.topBar .socialLinks span {
+  padding-right: 10px;
+}
+.navbar {
+  width: 100%;
+}

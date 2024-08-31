@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* for 1rem = 10px; */
+  --root-font-size: 62.5%;
+  --color-primary: #4ac87e; /* light green */
+  --color-secondary: #f08a5d; /* Orange */
+  --color-tertiary: #b83b5e; /* Red */
+  --color-white: #fff;
+
+  --container-padding: 10rem;
+}
+
+html {
+  font-size: var(--root-font-size);
+}
+
+.container {
+  /* max-width: 1440px; */
+  width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Remove all default behaviors */
+a,
+a:hover,
+a:focus,
+a:active {
+  all: unset;
+  cursor: pointer;
+}
