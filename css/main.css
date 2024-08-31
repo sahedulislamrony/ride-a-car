@@ -9,15 +9,22 @@
   /* for 1rem = 10px; */
   --root-font-size: 62.5%;
   --color-primary: #4ac87e; /* light green */
+  --color-primary-deep: #08b850; /* dark green */
   --color-secondary: #f08a5d; /* Orange */
   --color-tertiary: #b83b5e; /* Red */
   --color-white: #fff;
+  --color-black: #19191b;
+  --color-gray: #646464;
 
   --container-padding: 10rem;
 }
 
 html {
   font-size: var(--root-font-size);
+  scroll-behavior: smooth;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 .container {

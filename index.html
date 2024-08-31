@@ -9,6 +9,12 @@
       src="https://kit.fontawesome.com/b1b9aa0781.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -39,14 +45,39 @@
           </a>
         </div>
       </div>
+
       <nav class="container navbar">
-        <a href="#" class="logo">Ride A Car</a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="logo">
+          <a href="#home">Logo</a>
+        </div>
+        <div class="navItems">
+          <ul>
+            <li class="navlink active" id="home"><a href="#top">home</a></li>
+            <li class="navlink" id="service">
+              <a href="#service-sec"
+                >our services<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="navlink" id="blog"><a href="#blog-sec">blog</a></li>
+            <li class="navlink" id="about">
+              <a href="#about-sec">about us</a>
+            </li>
+            <li class="navlink" id="contact">
+              <a href="#contact-sec">contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="others">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <!-- round borderd plus icon was paid  -->
+          <div class="border"><i class="fa-solid fa-plus"></i></div>
+
+          <div class="profile">
+            <img src="./assets/images/profile.png" alt="Profile picture " />
+          </div>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
       </nav>
     </header>
 
