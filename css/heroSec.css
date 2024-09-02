@@ -1,0 +1,282 @@
+.hero-main {
+  position: relative;
+  height: 80rem;
+}
+
+.hero-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57.5%;
+  height: 100%;
+  background-image: url("../assets/images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-main-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* Text Section */
+
+.hero-main-content .text {
+  flex: 1;
+  height: 100%;
+  z-index: 5;
+}
+
+.hero-main-content .text h1 {
+  margin-top: 12rem;
+  font-size: 5.7rem;
+  font-weight: var(--font-semibold);
+}
+.hero-main-content .text h1 span {
+  color: var(--color-primary-deep);
+}
+
+.hero-main-content .text p {
+  margin-top: 2rem;
+  margin-right: 15rem;
+  font-size: 2rem;
+  font-weight: var(--font-regular);
+  color: var(--color-gray);
+}
+
+.hero-main-content .appButtons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.hero-main-content .appButtons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-main-content .appButtons .card {
+  width: 10.5rem;
+  height: 4.2rem;
+  background-color: var(--color-black);
+  border-radius: 0.7rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main-content .appButtons .card .logo {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+
+  display: grid;
+  place-items: center;
+}
+.appButtons .card .logo img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.hero-main-content .appButtons .card .text {
+  flex: 1.5;
+  height: 100%;
+  padding-left: 5px;
+  color: var(--color-white);
+}
+
+.appButtons .card .text h6 {
+  margin-top: 1rem;
+  font-size: 0.6rem;
+}
+
+.hero-main-content .appButtons .google {
+  margin-left: 1.5rem;
+}
+.hero-main-content .appButtons .google img {
+  margin-left: 5px;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+.hero-main-content .appButtons .google h4 {
+  font-size: 0.8rem;
+}
+
+/* Car Section  */
+
+.hero-main-content .car-sec {
+  flex: 1;
+  height: 100%;
+
+  position: relative;
+}
+.car-sec .bg-card {
+  position: absolute;
+  top: 7rem;
+  right: 9rem;
+  width: 43.5rem;
+  height: 63rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(180deg, #4ac87e 0%, #a7ddbd 100%);
+}
+
+.car-sec .bg-card::after {
+  content: "";
+  position: absolute;
+  bottom: -3.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.6rem;
+  height: 7.6rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+  background-image: url("../assets/images/steering-wheel.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.car-sec .car-img {
+  position: absolute;
+  top: 15rem;
+  right: 1.5rem;
+  width: 66.6rem;
+  height: 37.5rem;
+  background-image: url("../assets/images/car.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Form section  */
+
+.hero-main .form {
+  position: absolute;
+  bottom: 20.4rem;
+  width: 85rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.hero-main .form form {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form form label {
+  font-weight: var(--font-medium);
+  font-size: 1.6rem;
+  color: var(--color-black);
+  display: block;
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+}
+
+.form form input {
+  width: 18.6rem;
+  height: 2.9rem;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+}
+
+.form form input::placeholder {
+  font-size: 1.2rem;
+  font-weight: var(--font-regular);
+  color: var(--color-gray);
+  padding-left: 1rem;
+}
+
+.form form input:focus {
+  outline: none;
+  border: 0.2rem solid var(--color-primary-deep);
+}
+
+.form form input[type="date"] {
+  width: 13rem;
+  text-align: center;
+  padding: 0;
+}
+.form form input[id="people"] {
+  width: 3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: center;
+}
+.form form .input:nth-child(4) .group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+.form form .input:nth-child(4) span {
+  width: 2.5rem;
+  height: 2.9rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: #f1f1f1;
+
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form .input:nth-child(4) span i {
+}
+/* Disable default Increment/Decrement Buttons */
+/* Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button[type="submit"] {
+  width: 11.6rem;
+  height: 4.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 11px 20px -3px var(--color-primary);
+
+  margin-left: 2rem;
+}
