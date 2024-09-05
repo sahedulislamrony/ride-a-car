@@ -1,0 +1,131 @@
+.footer-top {
+  height: 48.75rem;
+  background-color: var(--color-black);
+  display: grid;
+  place-items: center;
+}
+
+.footer-top .content {
+  width: calc(100% - calc(var(--container-padding) * 2));
+  height: calc(100% - 5.2rem);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 9rem;
+}
+.footer-top .content .logo {
+  width: 36rem;
+  height: 100%;
+}
+.footer-top .content .logo h1 {
+  font-size: 4rem;
+  font-weight: var(--font-bold);
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+.footer-top .content .logo p {
+  font-size: 1.8rem;
+  font-weight: var(--font-regular);
+  color: #bfbfbf;
+  padding-top: 5.5rem;
+}
+
+.footer-top .content .quickLinks {
+  width: 20rem;
+  height: 100%;
+  padding-top: 1.5rem;
+}
+.footer-top .content .quickLinks h1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+.footer-top .content ul {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: var(--font-regular);
+  color: #bfbfbf;
+  padding-top: 5.5rem;
+}
+.footer-top .content ul li {
+  padding-top: 1.5rem;
+}
+.footer-top .content ul li a:hover {
+  text-decoration: underline;
+}
+.footer-top .content .aboutUs {
+  width: 15rem;
+  height: 100%;
+
+  padding-top: 1.5rem;
+}
+
+.footer-top .content .aboutUs h1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+.footer-top .content .contact {
+  width: 20rem;
+  height: 100%;
+
+  padding-top: 1.5rem;
+}
+.footer-top .content .contact h1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+
+.footer-bottom {
+  height: 10rem;
+  background-color: var(--color-black);
+}
+
+.footer-bottom .content {
+  width: 100%;
+  height: 100%;
+  border-top: 0.2rem solid var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .content h2 {
+  font-size: 1.8rem;
+  font-weight: var(--font-regular);
+  color: #bfbfbf;
+  text-transform: capitalize;
+}
+.footer-bottom .content .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-bottom .content .icon a {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: var(--color-primary-deep);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-bottom .content .icon a:hover {
+  background-color: var(--color-white);
+
+  transition: all 0.2s ease-in-out;
+}

@@ -75,7 +75,7 @@
   box-shadow: 0 6px 30px -23px gray;
 }
 
-.logo {
+.header .logo {
   font-size: 3.2rem;
   font-weight: var(--font-medium); /* medium */
   flex: 1;
