@@ -1,0 +1,146 @@
+.appDownload-sec {
+  width: 100%;
+  height: 43rem;
+  position: relative;
+  background-color: transparent;
+
+  margin-bottom: 4rem;
+}
+.appDownload-sec .bg {
+  width: 100%;
+  height: 25rem;
+  position: absolute;
+  left: 0;
+  bottom: 5rem;
+  background-color: var(--color-primary-deep);
+  z-index: -1;
+}
+
+.appDownload-sec .bg::after {
+  content: "";
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-primary);
+}
+
+.appDownload-sec .bg::before {
+  content: "";
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 7rem;
+  top: 2rem;
+  background-color: var(--color-primary);
+}
+
+.appDownload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 15;
+}
+
+.appDownload .text {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.appDownload .text .text-main {
+  margin-top: 9rem;
+  padding-left: 2rem;
+  width: 41rem;
+  height: 18rem;
+}
+
+.appDownload .text .text-main h1 {
+  font-size: 3.6rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-white);
+}
+.appDownload .text .text-main p {
+  font-size: 1.6rem;
+  font-weight: var(--font-regular);
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.appDownload .text .text-main button {
+  width: 11.5rem;
+  height: 4rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 1.3rem;
+  font-weight: var(--font-regular);
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.15s;
+}
+.appDownload .text .text-main button:hover {
+  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.015);
+  transition: all 0.15s;
+  transform-origin: center;
+}
+
+.appDownload .content {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.appDownload .content .img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3.1rem;
+}
+.appDownload .content .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(0 0 0.75rem var(--color-primary));
+}
+
+.appDownload .content .downloadNumber {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 3rem;
+  width: 20rem;
+  height: 7.3rem;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+
+  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.appDownload .content .downloadNumber h1 {
+  font-size: 2rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-black);
+  padding-top: 1rem;
+}
+.appDownload .content .downloadNumber h4 {
+  font-size: 1.6rem;
+  font-weight: var(--font-medium);
+  color: var(--color-black);
+}
