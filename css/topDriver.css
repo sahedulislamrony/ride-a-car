@@ -1,0 +1,96 @@
+.driver-sec {
+  padding: 50px 0;
+  background: var(--color-white);
+  padding-top: 0;
+}
+
+.driver-sec .title {
+  width: 100%;
+  height: 14rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.driver-sec .title h1 {
+  font-size: 3rem;
+  font-weight: var(--font-semibold);
+  color: var(--color-black);
+}
+.driver-sec .title > p {
+  font-size: 2rem;
+  font-weight: var(--font-regular);
+  color: var(--color-gray);
+  margin-top: 1rem;
+
+  padding: 0 50rem;
+}
+
+.driver-sec .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  padding-bottom: 10rem;
+}
+
+.driver-sec .content .driverCard {
+  position: relative;
+  width: 27.1rem;
+  height: 35rem;
+  background-color: hsl(0, 5%, 96%);
+  border-radius: 2rem;
+  transition: 0.2s;
+  margin-top: 4rem;
+
+  overflow: hidden;
+}
+
+.driver-sec .content .driverCard .img {
+  width: 100%;
+  height: 26rem;
+  overflow: hidden;
+}
+
+.driver-sec .content .driverCard .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.driver-sec .content .driverCard .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10.6rem;
+  background-color: hsla(0, 0%, 100%, 0.385);
+  backdrop-filter: blur(20px);
+
+  text-transform: capitalize;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-sec .content .driverCard .text .name {
+  font-size: 2.2rem;
+  font-weight: var(--font-medium);
+  color: var(--color-black);
+}
+
+.driver-sec .content .driverCard .text .rating {
+  color: var(--color-yellow);
+  font-size: 2rem;
+}
+.driver-sec .content .driverCard .text .rating span {
+  padding-left: 0.5rem;
+}
+
+.driver-sec .content .driverCard:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
