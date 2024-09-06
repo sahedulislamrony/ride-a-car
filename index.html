@@ -3,6 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add all open graph and meta tags -->
+
+    <!-- Standard SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Ride A Car is a car rental service provider. We provide the best car rental service in the town. We have the best drivers in the town."
+    />
+    <meta name="keywords" content="Ride A Car, Car Rental, Car Service" />
+    <meta name="author" content="Sahedul Islam Rony" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Ride A Car - The Best Car Rental Service in Town"
+    />
+    <meta
+      property="og:description"
+      content="Ride A Car is a car rental service provider. We offer the best car rental service in the town with experienced drivers for a safe and comfortable ride."
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="/" /> -->
+    <!-- <meta property="og:image" content="./assets/images/car-service.jpg" />
+    <meta property="og:image:alt" content="Ride A Car - Car Rental Service" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Ride A Car" />
+    <meta property="og:updated_time" content="2024-09-06T12:00:00+00:00" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ride A Car - The Best Car Rental Service in Town"
+    />
+    <meta
+      name="twitter:description"
+      content="Ride A Car is a car rental service provider with the best drivers in the town. Experience comfort and safety on every ride!"
+    />
+    <!-- <meta name="twitter:image" content="./assets/images/car-service.jpg" /> -->
+    <!-- <meta name="twitter:image:alt" content="Ride A Car - Car Rental Service" /> -->
+    <!-- <meta name="twitter:site" content="@RideACar" /> -->
+    <meta name="twitter:creator" content="@i_am_sahed" />
+
+    <!-- Canonical URL to Avoid Duplicate Content Issues -->
+    <link rel="canonical" href="/" />
     <title>Ride A Car || Sahedul Islam Rony</title>
 
     <script
@@ -17,14 +69,6 @@
     />
 
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/heroSec.css" />
-    <link rel="stylesheet" href="./css/service.css" />
-    <link rel="stylesheet" href="./css/topDriver.css" />
-    <link rel="stylesheet" href="./css/appDownload.css" />
-    <link rel="stylesheet" href="./css/testimonial.css" />
-    <link rel="stylesheet" href="./css/marketing.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -34,20 +78,20 @@
             <i class="fa-solid fa-phone"></i>
             <span>+8801889505186</span>
           </a>
-          <a href="">
+          <a href="" class="email">
             <i class="fa-regular fa-envelope"></i>
-            <span>sahed.cse.just@gmail.com</span>
+            <span>cast.sahedul@gmail.com</span>
           </a>
         </div>
         <div class="socialLinks">
           <span>Follow</span>
-          <a href="">
+          <a href="" class="fb">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="">
+          <a href="" class="twitter">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="">
+          <a href="" class="linkedin">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
@@ -55,19 +99,17 @@
 
       <nav class="container navbar">
         <div class="logo">
-          <a href="#home">Logo</a>
+          <a href="#header">Logo</a>
         </div>
         <div class="navItems">
           <ul>
-            <li class="navlink active" id="home"><a href="#top">home</a></li>
+            <li class="navlink active" id="home"><a href="#header">home</a></li>
             <li class="navlink" id="service">
-              <a href="#service-sec"
-                >our services<i class="fa-solid fa-chevron-down"></i
-              ></a>
+              <a href="#service-sec">our services</a>
             </li>
-            <li class="navlink" id="blog"><a href="#blog-sec">blog</a></li>
+            <li class="navlink" id="blog"><a href="#topDriver">blog</a></li>
             <li class="navlink" id="about">
-              <a href="#about-sec">about us</a>
+              <a href="#testimonial">about us</a>
             </li>
             <li class="navlink" id="contact">
               <a href="#contact-sec">contact us</a>
@@ -83,7 +125,7 @@
           <div class="profile">
             <img src="./assets/images/profile.png" alt="Profile picture " />
           </div>
-          <i class="fa-solid fa-chevron-down"></i>
+          <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </div>
       </nav>
     </header>
@@ -182,7 +224,7 @@
 
       <!-- Service section start  -->
 
-      <section class="container service-sec" id="service">
+      <section class="container service-sec" id="service-sec">
         <div class="title">
           <h1>our services</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -200,7 +242,7 @@
               ratione unde earum amet.
             </p>
 
-            <!-- dubble index for aditional design -->
+            <!-- dubble span for aditional design -->
             <span>
               <span></span>
             </span>
@@ -218,7 +260,7 @@
               ratione unde earum amet.
             </p>
 
-            <!-- dubble index for aditional design -->
+            <!-- dubble span for aditional design -->
             <span>
               <span></span>
             </span>
@@ -236,7 +278,7 @@
               ratione unde earum amet.
             </p>
 
-            <!-- dubble index for aditional design -->
+            <!-- dubble span for aditional design -->
             <span>
               <span></span>
             </span>
@@ -369,7 +411,7 @@
       <!-- App Download Section End -->
 
       <!-- Testimonials Section Start  -->
-      <section class="container testimonial-sec">
+      <section class="container testimonial-sec" id="testimonial">
         <div class="slider-root">
           <div class="slider-title">
             <h3>testimonials</h3>
@@ -442,7 +484,7 @@
       <!-- Testimonials Section End  -->
 
       <!-- Marketting Section Start -->
-      <section class="marketing-sec">
+      <section class="marketing-sec" id="contact-sec">
         <div class="content">
           <div class="text">
             <h1>Get free marketing analysis?</h1>
@@ -454,7 +496,7 @@
             </p>
           </div>
           <div class="button">
-            <button>contuct today</button>
+            <button>contact today</button>
           </div>
         </div>
         <div class="bg"></div>
@@ -476,7 +518,7 @@
             <div class="quickLinks">
               <h1>Quick links</h1>
               <ul>
-                <li><a href="#home">home</a></li>
+                <li><a href="#header">home</a></li>
                 <li><a href="#">privacy policy</a></li>
                 <li><a href="#">terms & conditions</a></li>
               </ul>
@@ -504,9 +546,13 @@
               <h2>copyright 2024 &copy; all rights reserved</h2>
             </div>
             <div class="icon">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 57.5%;
-  height: 100%;
+  height: 90%;
   background-image: url("../assets/images/map.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,8 +250,6 @@
   align-items: center;
 }
 
-.form form .input:nth-child(4) span i {
-}
 /* Disable default Increment/Decrement Buttons */
 /* Chrome, Safari, Edge, and Opera */
 input[type="number"]::-webkit-outer-spin-button,

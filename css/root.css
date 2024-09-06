@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* for 1rem = 10px; */
+  --root-font-size: 62.5%;
+  --color-primary: #4ac87e; /* light green */
+  --color-primary-deep: #08b850; /* dark green */
+  --color-secondary: #f08a5d; /* Orange */
+  --color-tertiary: #b83b5e; /* Red */
+  --color-white: #fff;
+  --color-black: #19191b;
+  --color-gray: #646464;
+  --color-yellow: #ffc700;
+
+  --container-padding: 18rem;
+
+  /* fonts */
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+}
+
+html {
+  font-size: var(--root-font-size);
+  scroll-behavior: smooth;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  /* max-width: 1440px; */
+  width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Remove all default behaviors */
+a,
+a:hover,
+a:focus,
+a:active {
+  all: unset;
+  cursor: pointer;
+}
+
+/* import other css files
+@import "./header.css";
+@import "./heroSec.css";
+@import "./services.css";
+@import "./topDriver.css";
+@import "./appDownload.css";
+@import "./testimonial.css";
+@import "./marketing.css";
+@import "./footer.css"; */
