@@ -5,7 +5,7 @@
 **Github Page : https://sahedulislamrony.github.io/ride-a-car**
 <br />
 
-**Firebase App : https://rider-01.web.app**
+**Firebase App : https://rider5.web.app**
 
 ## Getting Started
 
