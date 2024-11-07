@@ -12,7 +12,7 @@
 To clone this repository, use the following command:
 
 ```sh
-git clone https://github.com/yourusername/ride-a-car.git
+git clone https://github.com/sahedulislamrony/ride-a-car.git
 ```
 
 ```sh
